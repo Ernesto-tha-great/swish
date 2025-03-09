@@ -1,12 +1,39 @@
 {
-  "name": "backend",
+  "name": "swish",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.ts",
+    "dev": "nodemon src/server.ts",
+    "test": "jest --runInBand"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "blockchain based system for managing payments and payroll",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "aws-sdk": "^2.1692.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "decimal.js": "^10.5.0",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "moment-timezone": "^0.5.47",
+    "mongoose": "^8.12.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^11.1.0",
+    "web3": "^4.16.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
+  }
 }
