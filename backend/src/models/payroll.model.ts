@@ -137,5 +137,4 @@ const payrollSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const Payroll = mongoose.model("Payroll", payrollSchema);
-module.exports = Payroll;
+export default mongoose.model("Payroll", payrollSchema);
